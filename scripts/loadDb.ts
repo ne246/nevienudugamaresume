@@ -22,7 +22,10 @@ const { ASTRA_DB_NAMESPACE,
         ASTRA_DB_COLLECTION,
         ASTRA_DB_API_ENDPOINT,
         ASTRA_DB_APPLICATION_TOKEN,
-        OPENAI_API_KEY
+        OPENAI_API_KEY,
+        RESUME,
+        ABOUTME
+
 } = process.env
 
 //every property and method openai comes will be attached to this
@@ -30,8 +33,8 @@ const openai = new OpenAI({apiKey: OPENAI_API_KEY})
 
 //put your data in here like links to scrape and me
 const myData = [
-        'https://docs.google.com/document/d/1fRuq9WkGBKpoQMIQgc-U9hsr4q3qQw46/export?format=txt',
-        'https://docs.google.com/document/d/1gx1uLQITXM4Pe4beRmi2icZOiazRAbmtzGIaAGJzgD8/export?format=txt'
+        RESUME,
+        ABOUTME
 ]
 
 //initialize the Astra DB client
