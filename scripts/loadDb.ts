@@ -33,8 +33,8 @@ const openai = new OpenAI({apiKey: OPENAI_API_KEY})
 
 //put your data in here like links to scrape and me
 const myData = [
-        RESUME,
-        ABOUTME
+        'https://docs.google.com/document/d/1fRuq9WkGBKpoQMIQgc-U9hsr4q3qQw46/export?format=txt',
+        'https://docs.google.com/document/d/1gx1uLQITXM4Pe4beRmi2icZOiazRAbmtzGIaAGJzgD8/export?format=txt'
 ]
 
 //initialize the Astra DB client
